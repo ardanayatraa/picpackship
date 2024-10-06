@@ -84,16 +84,15 @@
         </div>
 
         <div class="flex mx-auto gap-8">
+            <!-- Efficient Picking -->
             <div
                 class="max-w-xl w-full border-b-8 rounded-xl border-b-green-900 flex relative flex-col border gap-20 p-8">
                 <div>
                     <img src="../src/img/3d-cube-scan.png" alt="" class="w-20">
                 </div>
                 <div class="flex flex-col gap-10">
-                    <div class="flex flex-col  h-64 gap-5">
-                        <div class="font-inter font-medium text-5xl leading-10">
-                            Efficient Picking
-                        </div>
+                    <div class="flex flex-col h-64 gap-5">
+                        <div class="font-inter font-medium text-5xl leading-10">Efficient Picking</div>
                         <div>
                             <ul class="list-disc pl-5 font-inter text-xl space-y-2">
                                 <li class="leading-relaxed">Unlimited devices and trolleys to scale as needed.</li>
@@ -101,100 +100,403 @@
                                 </li>
                                 <li class="leading-relaxed">Real-time activity tracking to reduce errors.</li>
                             </ul>
+                        </div>
+                    </div>
+                    <button class="flex gap-2 items-center openModalButton" data-target="modal1">
+                        <div class="text-green-900 text-xl font-inter font-medium">Learn More</div>
+                        <div><img src="../src/img/arrow-forward.png" alt=""></div>
+                    </button>
+                </div>
+            </div>
 
+            <!-- Modal for Efficient Picking -->
+            <div id="modal1" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+                <div class="max-w-5xl w-full mx-auto bg-white rounded-2xl shadow-lg">
+                    <div class="w-full rounded-t-2xl flex bg-[#003E2C] p-10">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-2">
+                                <div class="text-white font-inter font-medium text-xl">
+                                    <img src="../src/img/3d-cube-scan1.png" alt="">
+                                </div>
+                                <div class="ml-4 text-white font-inter font-medium text-xl">Efficient Picking</div>
+                            </div>
+                            <div class="text-white font-inter">Our powerful packing module is designed to enhance the
+                                efficiency and accuracy of your packing process. Discover how it can make a difference:
+                            </div>
+                        </div>
+                        <button
+                            class="flex items-center border border-white rounded-lg bg-transparent hover:text-black focus:outline-none w-28 h-12 px-4 py-3 gap-2 closeModalButton">
+                            <span class="text-xl font-bold"><img src="../src/img/close-circle.png" alt=""></span>
+                            <span class="text-white">Close</span>
+                        </button>
+                    </div>
+
+                    <div class="flex bg-[#035139] pl-10 pt-16 relative py-10 pb-10 gap-20 flex-col">
+                        <div class="overflow-x-auto gap-8 flex">
+                            <div class="flex-shrink-0 max-w-80 flex gap-8 w-full flex-col">
+                                <div
+                                    class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                    1</div>
+                                <div class="text-white font-inter text-3xl font-medium">Personalised for Your Operations
+                                </div>
+                                <div class="text-white font-inter font-normal text-base">No matter how complex your
+                                    shipping process, our software adapts to fit. You can customise every aspect of your
+                                    SSCC labels—from layout and design to specific data elements—making it easy to align
+                                    with your operational workflow, customer requirements, or industry standards.</div>
+                            </div>
+                            <div class="flex-shrink-0 max-w-80 flex gap-8 w-full flex-col">
+                                <div
+                                    class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                    2</div>
+                                <div class="text-white font-inter text-3xl font-medium">Flexible Picking Modes
+                                </div>
+                                <div class="text-white font-inter font-normal text-base">Customise your picking process
+                                    to suit your needs. Choose between single-order picking for
+                                    a straightforward approach or multi-pick for handling multiple orders
+                                    simultaneously, all
+                                    tailored to fit your workflow.</div>
+                            </div>
+                            <div class="flex-shrink-0 max-w-80 flex gap-8 w-full flex-col">
+                                <div
+                                    class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                    3</div>
+                                <div class="text-white font-inter text-3xl font-medium">Real-Time Activity Tracking
+                                </div>
+                                <div class="text-white font-inter font-normal text-base">Monitor every step of your
+                                    picking process. With comprehensive activity logs, you can track
+                                    picker performance, identify bottlenecks, and ensure orders are accurately
+                                    fulfilled.</div>
+                            </div>
+                            <div class="flex-shrink-0 max-w-80 flex gap-8 w-full flex-col">
+                                <div
+                                    class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                    4</div>
+                                <div class="text-white font-inter text-3xl font-medium">Barcode Integration
+                                </div>
+                                <div class="text-white font-inter font-normal text-base">Designed to work seamlessly
+                                    with barcode scanners, our system ensures accurate data
+                                    capture, speeding up your picking process while minimising the potential for human
+                                    error.</div>
+                            </div>
+                            <div class="flex-shrink-0 max-w-80 flex gap-8 w-full flex-col">
+                                <div
+                                    class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                    5</div>
+                                <div class="text-white font-inter text-3xl font-medium">Enhanced Resource Management
+                                </div>
+                                <div class="text-white font-inter font-normal text-base">Gain full visibility into your
+                                    picking operations. With detailed reporting, you can optimise
+                                    resource allocation, identify efficiencies, and improve overall productivity.</div>
+                            </div>
+                            <!-- Add more sections as needed -->
+                        </div>
+
+                        <div class="flex gap-8">
+                            <div class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center">
+                                <img src="../src/img/arrow-left.png" alt="Panah Kiri" class="w-8 h-8">
+                            </div>
+                            <div class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center">
+                                <img src="../src/img/arrow-right.png" alt="Panah Kanan" class="w-8 h-8">
+                            </div>
                         </div>
                     </div>
 
-                    <div class="flex gap-2 items-center">
-                        <div class="text-green-900 text-xl font-inter font-medium">
-                            Learn More
-                        </div>
-                        <div>
-                            <img src="../src/img/arrow-forward.png" alt="">
+                    <div class="w-full rounded-b-2xl flex bg-[#CFFCE3] p-10">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-2">
+                                <div class="text-[#026343] font-inter font-medium text-xl"><img
+                                        src="../src/img/info-circle.png" alt=""></div>
+                                <div class="ml-4 text-[#026343] font-inter font-medium text-xl">Why Pick with
+                                    PickPackShip?</div>
+                            </div>
+                            <div class="text-[#026343] font-inter">Our picking module is built to adapt to your unique
+                                needs, providing unparalleled flexibility and control. From small adjustments to
+                                full-scale operations, our solution helps you deliver on time, every time.</div>
                         </div>
                     </div>
                 </div>
-
-                <div class="absolute bg-green-900 h-2"></div>
             </div>
 
+            <!-- Seamless Packing -->
             <div
                 class="max-w-xl w-full border-b-8 rounded-xl border-b-green-900 flex relative flex-col border gap-20 p-8">
                 <div>
-                    <img src="../src/img/3d-cube-scan.png" alt="" class="w-20">
+                    <img src="../src/img/box-tick.png" alt="" class="w-20">
                 </div>
                 <div class="flex flex-col gap-10">
-                    <div class="flex flex-col  h-64 gap-5">
-                        <div class="font-inter font-medium text-5xl leading-10">
-                            Efficient Picking
-                        </div>
+                    <div class="flex flex-col h-64 gap-5">
+                        <div class="font-inter font-medium text-5xl leading-10">Seamless Packing</div>
                         <div>
                             <ul class="list-disc pl-5 font-inter text-xl space-y-2">
-                                <li class="leading-relaxed">Unlimited devices and trolleys to scale as needed.</li>
-                                <li class="leading-relaxed">Pick by single order or multi-pick for flexible processes.
-                                </li>
-                                <li class="leading-relaxed">Real-time activity tracking to reduce errors.</li>
+                                <li class="leading-relaxed">Unlimited packing stations for maximum efficiency.</li>
+                                <li class="leading-relaxed">Customisable GS1-128 compliant labels for seamless
+                                    integration.</li>
+                                <li class="leading-relaxed">Multiple box type support to fit any product.</li>
                             </ul>
+                        </div>
+                    </div>
+                    <button class="flex gap-2 items-center openModalButton" data-target="modalSeamlessPacking">
+                        <div class="text-green-900 text-xl font-inter font-medium">Learn More</div>
+                        <div><img src="../src/img/arrow-forward.png" alt=""></div>
+                    </button>
+                </div>
+            </div>
 
+            <!-- Modal for Seamless Packing -->
+            <div id="modalSeamlessPacking"
+                class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+                <div class="max-w-5xl w-full mx-auto bg-white rounded-2xl shadow-lg">
+                    <div class="w-full rounded-t-2xl flex bg-[#003E2C] p-10">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-2">
+                                <div class="text-white font-inter font-medium text-xl">
+                                    <img src="../src/img/box-tick1.png" alt="">
+                                </div>
+                                <div class="ml-4 text-white font-inter font-medium text-xl">Seamless Packing</div>
+                            </div>
+                            <div class="text-white font-inter">Our powerful packing module is designed to enhance the
+                                efficiency and accuracy of your packing process. Discover how it can make a difference:
+                            </div>
+                        </div>
+                        <button
+                            class="flex items-center border border-white rounded-lg bg-transparent hover:text-black focus:outline-none w-28 h-12 px-4 py-3 gap-2 closeModalButton">
+                            <span class="text-xl font-bold"><img src="../src/img/close-circle.png" alt=""></span>
+                            <span class="text-white">Close</span>
+                        </button>
+                    </div>
+
+                    <div class="flex bg-[#035139] pl-10 pt-16 relative py-10 pb-10 gap-20 flex-col">
+                        <div class="overflow-x-auto gap-8 flex">
+                            <div class="flex-shrink-0 max-w-80 flex gap-8 w-full flex-col">
+                                <div
+                                    class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                    1</div>
+                                <div class="text-white font-inter text-3xl font-medium">Unlimited Packing Stations
+                                </div>
+                                <div class="text-white font-inter font-normal text-base">Scale without limits. Set up as
+                                    many packing stations and devices as your business demands, allowing for flexibility
+                                    and quick adaptation to your growing needs.</div>
+                            </div>
+                            <div class="flex-shrink-0 max-w-80 flex gap-8 w-full flex-col">
+                                <div
+                                    class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                    2</div>
+                                <div class="text-white font-inter text-3xl font-medium">Customisable GS1-128 Compliant
+                                    Labels
+                                </div>
+                                <div class="text-white font-inter font-normal text-base">Meet all your labelling needs
+                                    with ease. Generate labels that are fully compliant with GS1-128 standards for easy
+                                    Advanced Shipping Notice (ASN) integration, and customise label designs to fit
+                                    client-specific requirements, including specialised barcodes.</div>
+                            </div>
+                            <div class="flex-shrink-0 max-w-80 flex gap-8 w-full flex-col">
+                                <div
+                                    class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                    3</div>
+                                <div class="text-white font-inter text-3xl font-medium">Multiple Box Types & Packing
+                                    Methods
+                                </div>
+                                <div class="text-white font-inter font-normal text-base">Choose the right box for every
+                                    shipment. Our system supports various box types and packing configurations, helping
+                                    you optimise space, protect your products, and reduce shipping costs</div>
+                            </div>
+                            <div class="flex-shrink-0 max-w-80 flex gap-8 w-full flex-col">
+                                <div
+                                    class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                    4</div>
+                                <div class="text-white font-inter text-3xl font-medium">Track Weights & Dimensions
+                                </div>
+                                <div class="text-white font-inter font-normal text-base">Capture the weight and
+                                    dimensions of each box as you pack. Get accurate totals for your entire shipment,
+                                    allowing you to streamline shipping costs and ensure compliance with courier
+                                    requirements</div>
+                            </div>
+                            <div class="flex-shrink-0 max-w-80 flex gap-8 w-full flex-col">
+                                <div
+                                    class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                    5</div>
+                                <div class="text-white font-inter text-3xl font-medium">Activity Tracking & Error
+                                    Minimisation
+                                </div>
+                                <div class="text-white font-inter font-normal text-base">Every packing action is logged.
+                                    Track packer activities, identify inefficiencies, and minimise errors through full
+                                    visibility into your packing process, improving quality control and resource
+                                    management</div>
+                            </div>
+                            <!-- Add more sections as needed -->
+                        </div>
+
+                        <div class="flex gap-8">
+                            <div class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center">
+                                <img src="../src/img/arrow-left.png" alt="Panah Kiri" class="w-8 h-8">
+                            </div>
+                            <div class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center">
+                                <img src="../src/img/arrow-right.png" alt="Panah Kanan" class="w-8 h-8">
+                            </div>
                         </div>
                     </div>
 
-                    <div class="flex gap-2 items-center">
-                        <div class="text-green-900 text-xl font-inter font-medium">
-                            Learn More
-                        </div>
-                        <div>
-                            <img src="../src/img/arrow-forward.png" alt="">
+                    <div class="w-full rounded-b-2xl flex bg-[#CFFCE3] p-10">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-2">
+                                <div class="text-[#026343] font-inter font-medium text-xl"><img
+                                        src="../src/img/info-circle.png" alt=""></div>
+                                <div class="ml-4 text-[#026343] font-inter font-medium text-xl">Why Pick with
+                                    PickPackShip?</div>
+                            </div>
+                            <div class="text-[#026343] font-inter">Our picking module is built to adapt to your unique
+                                needs, providing unparalleled flexibility and control. From small adjustments to
+                                full-scale operations, our solution helps you deliver on time, every time.</div>
                         </div>
                     </div>
                 </div>
-
-                <div class="absolute bg-green-900 h-2"></div>
             </div>
 
+            <!-- Smooth Shipping -->
             <div
                 class="max-w-xl w-full border-b-8 rounded-xl border-b-green-900 flex relative flex-col border gap-20 p-8">
                 <div>
-                    <img src="../src/img/3d-cube-scan.png" alt="" class="w-20">
+                    <img src="../src/img/truck-tick.png" alt="" class="w-20">
                 </div>
                 <div class="flex flex-col gap-10">
-                    <div class="flex flex-col  h-64 gap-5">
-                        <div class="font-inter font-medium text-5xl leading-10">
-                            Efficient Picking
-                        </div>
+                    <div class="flex flex-col h-64 gap-5">
+                        <div class="font-inter font-medium text-5xl leading-10">Smooth Shipping</div>
                         <div>
                             <ul class="list-disc pl-5 font-inter text-xl space-y-2">
-                                <li class="leading-relaxed">Unlimited devices and trolleys to scale as needed.</li>
-                                <li class="leading-relaxed">Pick by single order or multi-pick for flexible processes.
+                                <li class="leading-relaxed">Multiple shipping options to meet diverse customer needs.
                                 </li>
-                                <li class="leading-relaxed">Real-time activity tracking to reduce errors.</li>
+                                <li class="leading-relaxed">Automated tracking updates to keep customers informed.</li>
+                                <li class="leading-relaxed">Easy integration with major carriers.</li>
                             </ul>
+                        </div>
+                    </div>
+                    <button class="flex gap-2 items-center openModalButton" data-target="modalSmoothShipping">
+                        <div class="text-green-900 text-xl font-inter font-medium">Learn More</div>
+                        <div><img src="../src/img/arrow-forward.png" alt=""></div>
+                    </button>
+                </div>
+            </div>
 
+            <!-- Modal for Smooth Shipping -->
+            <div id="modalSmoothShipping"
+                class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+                <div class="max-w-5xl w-full mx-auto bg-white rounded-2xl shadow-lg">
+                    <div class="w-full rounded-t-2xl flex bg-[#003E2C] p-10">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-2">
+                                <div class="text-white font-inter font-medium text-xl">
+                                    <img src="../src/img/3d-cube-scan1.png" alt="">
+                                </div>
+                                <div class="ml-4 text-white font-inter font-medium text-xl">Smooth Shipping</div>
+                            </div>
+                            <div class="text-white font-inter">Our advanced shipping module ensures your shipments are
+                                managed accurately and efficiently, helping you deliver orders on time, every time.
+                                Here’s what makes our shipping process stand out:
+                            </div>
+                        </div>
+                        <button
+                            class="flex items-center border border-white rounded-lg bg-transparent hover:text-black focus:outline-none w-28 h-12 px-4 py-3 gap-2 closeModalButton">
+                            <span class="text-xl font-bold"><img src="../src/img/close-circle.png" alt=""></span>
+                            <span class="text-white">Close</span>
+                        </button>
+                    </div>
+
+                    <div class="flex bg-[#035139] pl-10 pt-16 relative py-10 pb-10 gap-20 flex-col">
+                        <div class="overflow-x-auto gap-8 flex">
+                            <div class="flex-shrink-0 max-w-80 flex gap-8 w-full flex-col">
+                                <div
+                                    class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                    1</div>
+                                <div class="text-white font-inter text-3xl font-medium">Unlimited Shipping Stations
+                                </div>
+                                <div class="text-white font-inter font-normal text-base">Scale your shipping operations
+                                    with ease. Whether you have one shipping station or many, our system supports
+                                    unlimited devices, allowing you to adapt quickly to increasing demand.</div>
+                            </div>
+                            <div class="flex-shrink-0 max-w-80 flex gap-8 w-full flex-col">
+                                <div
+                                    class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                    2</div>
+                                <div class="text-white font-inter text-3xl font-medium">Comprehensive Shipment Overview
+                                </div>
+                                <div class="text-white font-inter font-normal text-base">Get a complete view of every
+                                    shipment. Easily track total box count, weights, and dimensions, as well as any
+                                    additional requirements such as Client PO numbers or delivery date instructions, to
+                                    ensure accurate and timely dispatch.</div>
+                            </div>
+                            <div class="flex-shrink-0 max-w-80 flex gap-8 w-full flex-col">
+                                <div
+                                    class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                    3</div>
+                                <div class="text-white font-inter text-3xl font-medium">Multi-Courier Integration
+                                </div>
+                                <div class="text-white font-inter font-normal text-base">Seamlessly integrate with any
+                                    courier service. Our system supports an unlimited number of couriers, letting you
+                                    choose the best option for every shipment and automatically syncing tracking details
+                                    back to Acumatica</div>
+                            </div>
+                            <div class="flex-shrink-0 max-w-80 flex gap-8 w-full flex-col">
+                                <div
+                                    class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                    4</div>
+                                <div class="text-white font-inter text-3xl font-medium">Real-Time Tracking Information
+                                </div>
+                                <div class="text-white font-inter font-normal text-base">Stay informed and keep your
+                                    customers updated. Our module captures and records courier tracking numbers in real
+                                    time, ensuring you have the information you need to provide timely updates and
+                                    enhance customer satisfaction</div>
+                            </div>
+                            <div class="flex-shrink-0 max-w-80 flex gap-8 w-full flex-col">
+                                <div
+                                    class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                    5</div>
+                                <div class="text-white font-inter text-3xl font-medium">Accurate Record-Keeping
+                                </div>
+                                <div class="text-white font-inter font-normal text-base">Every shipping activity is
+                                    tracked and logged. Maintain detailed records for audit purposes, analyse shipping
+                                    performance, and improve workflow efficiency through data-driven insights.</div>
+                            </div>
+                            <!-- Add more sections as needed -->
+                        </div>
+
+                        <div class="flex gap-8">
+                            <div class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center">
+                                <img src="../src/img/arrow-left.png" alt="Panah Kiri" class="w-8 h-8">
+                            </div>
+                            <div class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center">
+                                <img src="../src/img/arrow-right.png" alt="Panah Kanan" class="w-8 h-8">
+                            </div>
                         </div>
                     </div>
 
-                    <div class="flex gap-2 items-center">
-                        <div class="text-green-900 text-xl font-inter font-medium">
-                            Learn More
-                        </div>
-                        <div>
-                            <img src="../src/img/arrow-forward.png" alt="">
+                    <div class="w-full rounded-b-2xl flex bg-[#CFFCE3] p-10">
+                        <div class="flex flex-col">
+                            <div class="flex items-center mb-2">
+                                <div class="text-[#026343] font-inter font-medium text-xl"><img
+                                        src="../src/img/info-circle.png" alt=""></div>
+                                <div class="ml-4 text-[#026343] font-inter font-medium text-xl">Why Pick with
+                                    PickPackShip?</div>
+                            </div>
+                            <div class="text-[#026343] font-inter">Our picking module is built to adapt to your unique
+                                needs, providing unparalleled flexibility and control. From small adjustments to
+                                full-scale operations, our solution helps you deliver on time, every time.</div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
+
         </div>
+
+
 
     </div>
 
     <div class="relative w-full mx-auto bg-[#003E2C]">
         <img src="../src/img/Image.png" alt="Gambar" class="w-full h-full object-cover">
         <div class="absolute top-0 left-0 flex flex-col gap-32 w-full h-full px-32 py-28">
-            <div class="flex  border justify-between">
+            <div class="flex  justify-between">
                 <div class="flex items-center justify-center">
-                    <div class="max-w-4xl  gap-8 flex flex-col w-full border">
+                    <div class="max-w-4xl  gap-8 flex flex-col w-full ">
                         <div class="text-white font-semibold font-inter text-2xl">Why Choose Our Custom SSCC Labels?
                         </div>
                         <div class="text-white font-inter font-medium text-6xl ">Customisable SSCC Labels to Fit Your
@@ -210,9 +512,9 @@
                 </div>
                 <div><img src="../src/img/wrapper.png" alt=""></div>
             </div>
-            <div class="border border-[#CFFCE3] w-full"></div>
-            <div class="flex border gap-20 flex-col">
-                <div class=" border overflow-x-auto gap-8 flex">
+            <div class=" border-[#CFFCE3] w-full"></div>
+            <div class="flex  gap-20 flex-col">
+                <div class="  overflow-x-auto gap-8 flex">
                     <div class="flex-shrink-0 max-w-md flex gap-8 w-full flex-col">
                         <div
                             class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
@@ -226,42 +528,46 @@
                     <div class="flex-shrink-0 max-w-md flex gap-8 w-full flex-col">
                         <div
                             class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
-                            1</div>
-                        <div class="text-white font-inter text-4xl font-medium">Personalised for Your Operations</div>
-                        <div class="text-white font-inter font-normal text-lg">No matter how complex your shipping
-                            process, our software adapts to fit. You can customise every aspect of your SSCC labels—from
-                            layout and design to specific data elements—making it easy to align with your operational
-                            workflow, customer requirements, or industry standards.</div>
+                            2</div>
+                        <div class="text-white font-inter text-4xl font-medium">Seamless Integration with Your Branding
+                        </div>
+                        <div class="text-white font-inter font-normal text-lg">Make your labels work for your brand. Add
+                            your logo or any other brand identifiers to your SSCC labels, enhancing your professional
+                            image and ensuring your shipments look
+                            polished from the warehouse to the customer’s door.</div>
                     </div>
                     <div class="flex-shrink-0 max-w-md flex gap-8 w-full flex-col">
                         <div
                             class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
-                            1</div>
-                        <div class="text-white font-inter text-4xl font-medium">Personalised for Your Operations</div>
-                        <div class="text-white font-inter font-normal text-lg">No matter how complex your shipping
-                            process, our software adapts to fit. You can customise every aspect of your SSCC labels—from
-                            layout and design to specific data elements—making it easy to align with your operational
-                            workflow, customer requirements, or industry standards.</div>
+                            3</div>
+                        <div class="text-white font-inter text-4xl font-medium">Enhanced Data Accuracy & Compliance
+                        </div>
+                        <div class="text-white font-inter font-normal text-lg">Our labels are GS1-128 compliant,
+                            ensuring you meet global standards for SSCC labelling.
+                            Beyond compliance, you have the power to decide what information is included on the
+                            label, improving data accuracy and reducing errors in scanning, tracking, and receiving.
+                        </div>
                     </div>
                     <div class="flex-shrink-0 max-w-md flex gap-8 w-full flex-col">
                         <div
                             class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
-                            1</div>
-                        <div class="text-white font-inter text-4xl font-medium">Personalised for Your Operations</div>
-                        <div class="text-white font-inter font-normal text-lg">No matter how complex your shipping
-                            process, our software adapts to fit. You can customise every aspect of your SSCC labels—from
-                            layout and design to specific data elements—making it easy to align with your operational
-                            workflow, customer requirements, or industry standards.</div>
+                            4</div>
+                        <div class="text-white font-inter text-4xl font-medium">Effortless Automation & Flexibility
+                        </div>
+                        <div class="text-white font-inter font-normal text-lg">Generate labels automatically based on
+                            your specific packing and shipping requirements.
+                            We can easily adjust details like label size, barcodes, and information fields, adapting to
+                            different customers, products, or shipment types without any hassle.</div>
                     </div>
                     <div class="flex-shrink-0 max-w-md flex gap-8 w-full flex-col">
                         <div
                             class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
-                            1</div>
-                        <div class="text-white font-inter text-4xl font-medium">Personalised for Your Operations</div>
-                        <div class="text-white font-inter font-normal text-lg">No matter how complex your shipping
-                            process, our software adapts to fit. You can customise every aspect of your SSCC labels—from
-                            layout and design to specific data elements—making it easy to align with your operational
-                            workflow, customer requirements, or industry standards.</div>
+                            5</div>
+                        <div class="text-white font-inter text-4xl font-medium">Real-Time Sync with Acumatica</div>
+                        <div class="text-white font-inter font-normal text-lg">Labels are more than just stickers—they
+                            carry critical shipment data. Our SSCC label
+                            generation is integrated with your Acumatica system, meaning every label is created and
+                            updated in real time, keeping your inventory and shipment information fully aligned.</div>
                     </div>
 
                 </div>
@@ -283,9 +589,9 @@
 
 
     <div class="w-full flex flex-col gap-40 pt-40 pb-32 px-36">
-        <div class="flex  border justify-between">
+        <div class="flex  justify-between">
             <div class="flex items-center justify-center">
-                <div class="max-w-4xl  gap-8 flex flex-col w-full border">
+                <div class="max-w-4xl  gap-8 flex flex-col w-full ">
                     <div class="text-black font-semibold font-inter text-2xl">Your Supply Chain, Elevated
                     </div>
                     <div class="text-black font-inter font-medium text-6xl ">PickPackShip Solutions: Cloud-Powered &
@@ -304,15 +610,111 @@
             <div><img src="../src/img/wrapper (1).png" alt=""></div>
         </div>
 
-        <div class="px-16 py-20 flex">
-            <div class="flex gap-6 flex-col">
-                <div>Contact Us</div>
-                <div>Book a demo</div>
-                <div>Reach out to our sales team to discover innovative solutions tailored to your business needs. We’ll
+        <div class="px-16 py-20  justify-between bg-[#FAFAFA] flex">
+            <div class="flex gap-6  max-w-2xl flex-col">
+                <div class="font-semibold font-inter text-2xl text-[#003E2C]">Contact Us</div>
+                <div class="font-inter text-6xl font-medium">Book a demo</div>
+                <div class="font-inter font-normal text-2xl">Reach out to our sales team to discover innovative
+                    solutions tailored to your business needs. We’ll
                     be in touch shortly.</div>
+            </div>
+            <div class="flex gap-9  max-w-2xl flex-col p-6">
+                <!-- Form Wrapper -->
+                <form class="flex flex-col gap-9 w-full">
+                    <!-- First Name & Last Name -->
+                    <div class="flex flex-col gap-7">
+                        <div class="flex gap-4">
+                            <div class="flex flex-col w-1/2">
+                                <input type="text" id="firstname" name="firstname" class="py-2 px-4 border rounded-lg"
+                                    placeholder="First Name">
+                            </div>
+                            <div class="flex flex-col w-1/2">
+                                <input type="text" id="lastname" name="lastname" class="py-2 px-4 border rounded-lg"
+                                    placeholder="Last Name">
+                            </div>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="flex flex-col">
+                            <input type="tel" id="phone" name="phone" class="py-2 px-4 border rounded-lg"
+                                placeholder="Phone Number">
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex flex-col">
+                            <input type="email" id="email" name="email" class="py-2 px-4 border rounded-lg"
+                                placeholder="Email">
+                        </div>
+
+                        <!-- Message -->
+                        <div class="flex flex-col">
+                            <textarea id="message" name="message" rows="4" class="py-2 px-4 border rounded-lg"
+                                placeholder="Message"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="flex justify-end">
+                        <button type="submit"
+                            class="bg-green-800 font-inter font-medium text-xl py-4 px-6 rounded-xl text-white">
+                            Submit
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+    <footer class="px-36 pt-20 pb-5 bg-[#FAFAFA] text-black font-inter">
+        <div class="flex justify-between ">
+            <div class="flex gap-20 flex-col">
+                <div class="flex flex-col gap-6">
+                    <div class="gap-3 min-w-40 flex min-h-10 items-center justify-center">
+                        <div>
+                            <img src="../src/img/logo.png" alt="Logo" class="h-12 w-auto">
+                        </div>
+                        <div class="flex flex-col items-start text-black text-xl leading-7 font-medium ml-4">
+                            <span>PickPackShip</span>
+                            <span>Solution</span>
+                        </div>
+                    </div>
+                    <div class="text-left">
+                        <span class="text-lg block">14 Manton Street</span>
+                        <span class="text-lg block">Morningside QLD 4170</span>
+                        <span class="text-lg block">Australia</span>
+                    </div>
+                </div>
+
+                <div>
+                    ⓒ 2024 PickPackShip Solution
+                </div>
+            </div>
+
+            <div class="flex gap-8 flex-col">
+                <div class="text-lg font-normal text-[#404040]">General Inquiries</div>
+                <div class="">
+                    <div class="text-lg  font-normal font-inter">Email: <a href="mailto:sales@herronbooks.com"
+                            class="hover:underline">sales@herronbooks.com</a></div>
+                    <div class="text-lg  font-normal font-inter">Phone: <a href="tel:+61733998799"
+                            class="hover:underline">+61 7 3399
+                            8799</a></div>
+                    <div class="text-lg  font-normal font-inter">Fax: <a href="tel:+61733993255"
+                            class="hover:underline">+61 7 3399 3255</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex items-end flex-col">
+                <a href="#" class="text-lg font-normal font-inter">Home</a>
+                <a href="#" class="text-lg font-normal font-inter">Custom SSC Labels</a>
+                <a href="#" class="text-lg font-normal font-inter">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const container = document.querySelector(".overflow-x-auto");
@@ -326,12 +728,25 @@
                 });
             });
 
-            // Fungsi untuk scroll ke kanan
+
             rightArrow.addEventListener("click", () => {
                 container.scrollBy({
                     left: container.clientWidth,
                     behavior: 'smooth'
                 });
+            });
+        });
+
+        document.querySelectorAll('.openModalButton').forEach(button => {
+            button.addEventListener('click', () => {
+                const modalId = button.getAttribute('data-target');
+                document.getElementById(modalId).classList.remove('hidden');
+            });
+        });
+
+        document.querySelectorAll('.closeModalButton').forEach(button => {
+            button.addEventListener('click', () => {
+                button.closest('.fixed').classList.add('hidden');
             });
         });
     </script>
