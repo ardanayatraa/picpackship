@@ -7,12 +7,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        navyblue: '#223B58',
-        primary: '#3E7FB9',
+        primary: '#003E2C',
       },
       fontFamily: {
-        'cs-canela': ['CS Canela', 'sans-serif'],
-        'general-sans': ['General Sans', 'sans-serif'],
         'inter': ['Inter', 'sans-serif'],
       },
       plugins: [

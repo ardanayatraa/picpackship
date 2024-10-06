@@ -1,62 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-.font-allura {
-    font-family: 'Allura', cursive;
-}
 
 
-
-@font-face {
-    font-family: 'CS Canela';
-    src: url('/src/font/canela/Canela Family/Canela-Light-Trial.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'General Sans';
-    src: url('/src/font/generalsans/GeneralSans_Complete/Fonts/OTF/GeneralSans-Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-.general-sans {
-    font-family: 'General Sans', sans-serif;
-}
-
-
-
-.canela {
-    font-family: 'CS Canela', sans-serif;
-    font-size: 48px;
-    font-weight: 400;
-    /* normal weight */
-    line-height: 57.6px;
-    text-align: center;
-}
-
-.navbar-scrolled {
-    background-color: #223B58;
-
-}
-
-/* Untuk semua browser modern */
-#image-container {
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
-    scrollbar-width: none; /* Firefox */
-}
-
-#image-container::-webkit-scrollbar {
-    display: none; /* Safari dan Chrome */
-}
-
-#image-container {
-    overflow-x: hidden; /* Scroll hanya menggunakan panah */
-    white-space: nowrap; /* Membuat konten tetap pada satu baris */
-    position: relative;
-}
-
-.no-scrollbar::-webkit-scrollbar {
+/* Menyembunyikan scrollbar di semua browser */
+.overflow-x-auto::-webkit-scrollbar {
     display: none;
+    /* Chrome, Safari, and Opera */
+}
+
+.overflow-x-auto {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
