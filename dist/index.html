@@ -11,15 +11,15 @@
 </head>
 
 <body>
-    <nav
-        class="w-full fixed z-50 h-20 border-b border-b-[#EDEDED33] py-5 px-36 top-0 flex items-center justify-between">
+    <nav id="mainNav"
+        class="w-full fixed z-50 h-20 border-b border-b-[#EDEDED33] py-5 px-36 top-0 flex items-center justify-between transition-all duration-300">
         <div class="gap-3 min-w-40 flex min-h-10 items-center justify-center">
             <div>
                 <img src="../src/img/logo.png" alt="">
             </div>
-            <div class="flex items-center text-white text-xl leading-7 font-inter font-medium">
+            <a href="./index.html" class="flex items-center text-white text-xl leading-7 font-inter font-medium">
                 PickPackShip Solution
-            </div>
+            </a>
         </div>
         <div class="gap-4 flex items-center">
             <div class="flex gap-3 min-w-max items-center">
@@ -42,6 +42,7 @@
             </div>
         </div>
     </nav>
+
 
     <!-- Start Hero Section -->
     <div class="relative w-full h-screen mx-auto">
@@ -750,6 +751,34 @@
             });
         });
     </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var mainNav = document.getElementById('mainNav');
+            var navLinks = mainNav.querySelectorAll('a');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) {
+                    mainNav.classList.add('bg-white', 'shadow-lg');
+                    mainNav.classList.remove('border-b-[#EDEDED33]');
+
+                    navLinks.forEach(link => {
+                        link.classList.replace('text-white', 'text-black');
+                    });
+                } else {
+                    mainNav.classList.remove('bg-white', 'shadow-lg');
+                    mainNav.classList.add('border-b-[#EDEDED33]');
+
+                    navLinks.forEach(link => {
+                        link.classList.replace('text-black', 'text-white');
+                    });
+                }
+            });
+        });
+
+    </script>
+
+
 
 </body>
 
