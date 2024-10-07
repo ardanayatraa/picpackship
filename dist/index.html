@@ -12,68 +12,62 @@
 
 <body>
     <nav id="mainNav"
-        class="w-full fixed z-50 h-16 lg:h-20 border-b border-b-[#EDEDED33] bg-white text-black py-5 px-4 lg:px-36 top-0 flex items-center justify-between transition-all duration-300">
+        class="w-full fixed z-50 h-16 lg:h-20 border-b border-b-[#EDEDED33] bg-white lg:bg-transparent text-black lg:text-white py-5 px-4 lg:px-36 top-0 flex items-center justify-between transition-all duration-300">
 
-
-        <div id="wrapper" class="hidden absolute  md:hidden top-full left-0 bg-white text-black w-full p-4 shadow-lg">
+        <div id="wrapper" class="hidden absolute top-full left-0 bg-white text-black w-full p-4 shadow-lg">
             <div class="gap-3 flex flex-col">
-                <a href="#" class="font-normal  text-lg leading-7 font-inter py-2 px-4 ">
-                    Why Us
-                </a>
-                <a href="#" class="font-normal  text-lg leading-7 font-inter py-2 px-4 ">
-                    Custom SSC Labels
-                </a>
-                <a href="#" class="font-normal  text-lg leading-7 font-inter py-2 px-4 ">
-                    Contact Us
-                </a>
+                <a href="#whyUs" class="font-normal text-lg leading-7 font-inter py-2 px-4">Why Us</a>
+                <a href="#customSscLabels" class="font-normal text-lg leading-7 font-inter py-2 px-4">Custom SSC
+                    Labels</a>
+                <a href="#contactUs" class="font-normal text-lg leading-7 font-inter py-2 px-4">Contact Us</a>
             </div>
         </div>
 
         <div class="gap-3 min-w-40 flex min-h-10 items-center justify-center">
             <div>
-                <img src="../src/img/logo.png" alt="">
+                <img src="../src/img/logo.png" alt="Logo" class="logo">
             </div>
             <a href="./index.html"
                 class="flex items-center text-black lg:text-white text-xl leading-7 font-inter font-medium">
                 PickPackShip Solution
             </a>
         </div>
+
         <div class="gap-4 flex items-center">
             <div class="lg:flex gap-3 min-w-max hidden items-center">
-                <a href="#"
+                <a href="#whyUs"
                     class="font-normal text-black lg:text-white text-lg leading-7 font-inter py-2 px-4 text-center">
                     Why Us
                 </a>
-                <a href="#"
+                <a href="#customSscLabels"
                     class="font-normal text-black lg:text-white text-lg leading-7 font-inter py-2 px-4 text-center">
                     Custom SSC Labels
                 </a>
-                <a href="#"
+                <a href="#contactUs"
                     class="font-normal text-black lg:text-white text-lg leading-7 font-inter py-2 px-4 text-center">
                     Contact Us
                 </a>
             </div>
             <div class="border h-8 flex items-center">
-                <!-- Content of this div will be centered -->
+                <!-- Empty div for alignment -->
             </div>
-
             <div class="flex items-center">
-                <img src="../src/img/emojione_flag-for-united-kingdom.png" alt="">
+                <img src="../src/img/emojione_flag-for-united-kingdom.png" alt="Flag">
             </div>
 
-            <div id="hamburger-menu" class="cursor-pointer flex md:hidden">
-                <!-- Ikon Hamburger -->
+            <div id="hamburger-menu" class="cursor-pointer flex lg:hidden">
+                <!-- Hamburger Icon -->
                 <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke-width="1.5" stroke="currentColor" class="size-6 text-black">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
-
-                <!-- Ikon Close -->
+                <!-- Close Icon -->
                 <img id="close-icon" src="../src/img/close-circle-black.png" alt="Close" class="hidden w-6 h-6" />
             </div>
         </div>
     </nav>
+
 
     <!-- Start Hero Section -->
     <div class="relative w-full h-screen mx-auto overflow-hidden">
@@ -106,7 +100,7 @@
 
 
 
-    <div class="lg:pb-36 lg:pt-32 lg:px-36 px-4 py-20 flex flex-col gap-28">
+    <div id="whyUs" class="lg:pb-36 lg:pt-32 lg:px-36 px-4 py-20 flex flex-col gap-28">
         <div class=" mx-auto max-w-5xl text-center w-full flex flex-col gap-7">
             <div class="font-inter font-semibold text-base lg:text-xl text-green-900">Why PickPackShip Solutions?</div>
             <div class="font-inter font-medium text-3xl lg:text-6xl">Efficiency, Accuracy, and Seamless Integration
@@ -123,7 +117,7 @@
             <div
                 class="max-w-xl w-full md:max-w-md border-b-8 rounded-xl border-b-green-900 flex flex-col border gap-8 p-4 md:p-8">
                 <div>
-                    <img src="../src/img/3d-cube-scan.png" alt="" class="w-20">
+                    <img src="../src/img/3d-cube-scan.png" alt="" class="w-14 lg:w-20">
                 </div>
                 <div class="flex flex-col gap-8">
                     <div class="flex flex-col h-auto gap-3 md:gap-5">
@@ -151,7 +145,7 @@
                         <div class="flex flex-col">
                             <div class="flex items-center mb-2">
                                 <div class="text-white font-inter font-medium text-xl">
-                                    <img src="../src/img/box-tick1.png" alt="">
+                                    <img src="../src/img/box-tick1.png" alt="" class="w-14 lg:w-20">
                                 </div>
                                 <div class="ml-4 text-white font-inter font-medium text-xl">Efficient Picking</div>
                             </div>
@@ -160,19 +154,22 @@
                             </div>
                         </div>
                         <button
-                            class="flex items-center border border-white rounded-lg bg-transparent hover:text-black focus:outline-none w-28 h-12 px-4 py-3 gap-2 closeModalButton">
-                            <span class="text-xl font-bold"><img src="../src/img/close-circle.png" alt=""></span>
-                            <span class="text-white">Close</span>
+                            class="flex items-center justify-center mx-auto border border-white rounded-lg bg-transparent hover:text-black focus:outline-none w-11 h-11 lg:w-28 lg:h-12 aspect-square gap-1 closeModalButton">
+                            <span class="text-lg font-bold flex items-center justify-center">
+                                <img src="../src/img/close-circle.png" class="w-5 h-5" alt="Close Icon">
+                            </span>
+                            <span class="hidden lg:flex text-white">Close</span>
                         </button>
+
                     </div>
 
-                    <div class="flex bg-[#035139] pl-10 pt-16 relative py-10 pb-10 gap-20 flex-col">
-                        <div class="overflow-x-auto gap-8 flex">
-                            <div class="flex-shrink-0 max-w-80 flex gap-4 lg:gap-8 w-full flex-col">
+                    <div class="flex bg-[#035139] pl-10 pt-16 relative py-10 pb-10 gap-10 lg:gap-20 flex-col">
+                        <!-- Konten Scrollable -->
+                        <div id="modalScroll1" class="overflow-x-auto gap-8 flex">
+                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
                                     class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
-                                    1
-                                </div>
+                                    1</div>
                                 <div class="text-white font-inter text-xl lg:text-3xl font-medium">Personalised for Your
                                     Operations</div>
                                 <div class="text-white font-inter font-normal text-sm lg:text-base">No matter how
@@ -182,11 +179,10 @@
                                     standards.</div>
                             </div>
 
-                            <div class="flex-shrink-0 max-w-80 flex gap-4 lg:gap-8 w-full flex-col">
+                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
                                     class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
-                                    2
-                                </div>
+                                    2</div>
                                 <div class="text-white font-inter text-xl lg:text-3xl font-medium">Flexible Picking
                                     Modes</div>
                                 <div class="text-white font-inter font-normal text-sm lg:text-base">Customise your
@@ -195,11 +191,10 @@
                                     all tailored to fit your workflow.</div>
                             </div>
 
-                            <div class="flex-shrink-0 max-w-80 flex gap-4 lg:gap-8 w-full flex-col">
+                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
                                     class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
-                                    3
-                                </div>
+                                    3</div>
                                 <div class="text-white font-inter text-xl lg:text-3xl font-medium">Real-Time Activity
                                     Tracking</div>
                                 <div class="text-white font-inter font-normal text-sm lg:text-base">Monitor every step
@@ -207,11 +202,10 @@
                                     performance, identify bottlenecks, and ensure orders are accurately fulfilled.</div>
                             </div>
 
-                            <div class="flex-shrink-0 max-w-80 flex gap-4 lg:gap-8 w-full flex-col">
+                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
                                     class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
-                                    4
-                                </div>
+                                    4</div>
                                 <div class="text-white font-inter text-xl lg:text-3xl font-medium">Barcode Integration
                                 </div>
                                 <div class="text-white font-inter font-normal text-sm lg:text-base">Designed to work
@@ -219,29 +213,33 @@
                                     up your picking process while minimising the potential for human error.</div>
                             </div>
 
-                            <div class="flex-shrink-0 max-w-80 flex gap-4 lg:gap-8 w-full flex-col">
+                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
                                     class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
-                                    5
-                                </div>
+                                    5</div>
                                 <div class="text-white font-inter text-xl lg:text-3xl font-medium">Enhanced Resource
                                     Management</div>
                                 <div class="text-white font-inter font-normal text-sm lg:text-base">Gain full visibility
                                     into your picking operations. With detailed reporting, you can optimise resource
                                     allocation, identify efficiencies, and improve overall productivity.</div>
                             </div>
-
                         </div>
 
+                        <!-- Tombol Panah -->
                         <div class="flex gap-8">
-                            <div class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center">
+                            <div id="modalScroll1left"
+                                class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center cursor-pointer">
                                 <img src="../src/img/arrow-left.png" alt="Panah Kiri" class="w-8 h-8">
                             </div>
-                            <div class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center">
+                            <div id="modalScroll1right"
+                                class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center cursor-pointer">
                                 <img src="../src/img/arrow-right.png" alt="Panah Kanan" class="w-8 h-8">
                             </div>
                         </div>
                     </div>
+
+
+
 
                     <div class="w-full lg:rounded-b-2xl flex bg-[#CFFCE3] p-10">
                         <div class="flex flex-col">
@@ -264,7 +262,7 @@
             <div
                 class="max-w-xl w-full md:max-w-md border-b-8 rounded-xl border-b-green-900 flex flex-col border gap-8 p-4 md:p-8">
                 <div>
-                    <img src="../src/img/box-tick.png" alt="" class="w-20">
+                    <img src="../src/img/box-tick.png" alt="" class="w-14 lg:w-20">
                 </div>
                 <div class="flex flex-col gap-6 md:gap-10">
                     <div class="flex flex-col h-auto gap-3 md:gap-5">
@@ -304,19 +302,21 @@
                             </div>
                         </div>
                         <button
-                            class="flex items-center border border-white rounded-lg bg-transparent hover:text-black focus:outline-none w-28 h-12 px-4 py-3 gap-2 closeModalButton">
-                            <span class="text-xl font-bold"><img src="../src/img/close-circle.png" alt=""></span>
-                            <span class="text-white">Close</span>
+                            class="flex items-center justify-center mx-auto border border-white rounded-lg bg-transparent hover:text-black focus:outline-none w-11 h-11 lg:w-28 lg:h-12 aspect-square gap-1 closeModalButton">
+                            <span class="text-lg font-bold flex items-center justify-center">
+                                <img src="../src/img/close-circle.png" class="w-5 h-5" alt="Close Icon">
+                            </span>
+                            <span class="hidden lg:flex text-white">Close</span>
                         </button>
                     </div>
 
-                    <div class="flex bg-[#035139] pl-10 pt-16 relative py-10 pb-10 gap-20 flex-col">
-                        <div class="overflow-x-auto gap-8 flex">
-                            <div class="flex-shrink-0 max-w-80 flex gap-4 lg:gap-8 w-full flex-col">
+                    <div class="flex bg-[#035139] pl-10 pt-16 relative py-10 pb-10 gap-10 lg:gap-20 flex-col">
+                        <!-- Konten Scrollable -->
+                        <div id="modalScroll2" class="overflow-x-auto gap-8 flex">
+                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
                                     class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
-                                    1
-                                </div>
+                                    1</div>
                                 <div class="text-white font-inter text-xl lg:text-3xl font-medium">Unlimited Packing
                                     Stations</div>
                                 <div class="text-white font-inter font-normal text-sm lg:text-base">Scale without
@@ -324,11 +324,10 @@
                                     allowing for flexibility and quick adaptation to your growing needs.</div>
                             </div>
 
-                            <div class="flex-shrink-0 max-w-80 flex gap-4 lg:gap-8 w-full flex-col">
+                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
                                     class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
-                                    2
-                                </div>
+                                    2</div>
                                 <div class="text-white font-inter text-xl lg:text-3xl font-medium">Customisable GS1-128
                                     Compliant Labels</div>
                                 <div class="text-white font-inter font-normal text-sm lg:text-base">Meet all your
@@ -337,11 +336,10 @@
                                     designs to fit client-specific requirements, including specialised barcodes.</div>
                             </div>
 
-                            <div class="flex-shrink-0 max-w-80 flex gap-4 lg:gap-8 w-full flex-col">
+                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
                                     class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
-                                    3
-                                </div>
+                                    3</div>
                                 <div class="text-white font-inter text-xl lg:text-3xl font-medium">Multiple Box Types &
                                     Packing Methods</div>
                                 <div class="text-white font-inter font-normal text-sm lg:text-base">Choose the right box
@@ -350,11 +348,10 @@
                                     shipping costs.</div>
                             </div>
 
-                            <div class="flex-shrink-0 max-w-80 flex gap-4 lg:gap-8 w-full flex-col">
+                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
                                     class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
-                                    4
-                                </div>
+                                    4</div>
                                 <div class="text-white font-inter text-xl lg:text-3xl font-medium">Track Weights &
                                     Dimensions</div>
                                 <div class="text-white font-inter font-normal text-sm lg:text-base">Capture the weight
@@ -363,11 +360,10 @@
                                     courier requirements.</div>
                             </div>
 
-                            <div class="flex-shrink-0 max-w-80 flex gap-4 lg:gap-8 w-full flex-col">
+                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
                                     class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
-                                    5
-                                </div>
+                                    5</div>
                                 <div class="text-white font-inter text-xl lg:text-3xl font-medium">Activity Tracking &
                                     Error Minimisation</div>
                                 <div class="text-white font-inter font-normal text-sm lg:text-base">Every packing action
@@ -375,19 +371,22 @@
                                     through full visibility into your packing process, improving quality control and
                                     resource management.</div>
                             </div>
-
-                            <!-- Add more sections as needed -->
                         </div>
 
+                        <!-- Tombol Panah -->
                         <div class="flex gap-8">
-                            <div class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center">
+                            <div id="modalScroll2left"
+                                class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center cursor-pointer">
                                 <img src="../src/img/arrow-left.png" alt="Panah Kiri" class="w-8 h-8">
                             </div>
-                            <div class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center">
+                            <div id="modalScroll2right"
+                                class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center cursor-pointer">
                                 <img src="../src/img/arrow-right.png" alt="Panah Kanan" class="w-8 h-8">
                             </div>
                         </div>
                     </div>
+
+
 
                     <div class="w-full rounded-b-2xl flex bg-[#CFFCE3] p-10">
                         <div class="flex flex-col">
@@ -409,7 +408,7 @@
             <div
                 class="max-w-xl w-full md:max-w-md border-b-8 rounded-xl border-b-green-900 flex flex-col border gap-8 p-4 md:p-8">
                 <div>
-                    <img src="../src/img/truck-tick.png" alt="" class="w-16 md:w-20">
+                    <img src="../src/img/truck-tick.png" alt="" class="w-14 lg:w-20">
                 </div>
                 <div class="flex flex-col gap-6 md:gap-10">
                     <div class="flex flex-col h-auto gap-3 md:gap-5">
@@ -450,19 +449,20 @@
                             </div>
                         </div>
                         <button
-                            class="flex items-center border border-white rounded-lg bg-transparent hover:text-black focus:outline-none w-28 h-12 px-4 py-3 gap-2 closeModalButton">
-                            <span class="text-xl font-bold"><img src="../src/img/close-circle.png" alt=""></span>
-                            <span class="text-white">Close</span>
+                            class="flex items-center justify-center mx-auto border border-white rounded-lg bg-transparent hover:text-black focus:outline-none w-11 h-11 lg:w-28 lg:h-12 aspect-square gap-1 closeModalButton">
+                            <span class="text-lg font-bold flex items-center justify-center">
+                                <img src="../src/img/close-circle.png" class="w-5 h-5" alt="Close Icon">
+                            </span>
+                            <span class="hidden lg:flex text-white">Close</span>
                         </button>
                     </div>
 
-                    <div class="flex bg-[#035139] pl-10 pt-16 relative py-10 pb-10 gap-20 flex-col">
-                        <div class="overflow-x-auto gap-8 flex">
-                            <div class="flex-shrink-0 max-w-80 flex gap-4 lg:gap-8 w-full flex-col">
+                    <div class="flex bg-[#035139] pl-10 pt-16 relative py-10 pb-10 gap-10 lg:gap-20 flex-col">
+                        <div id="modalScroll3" class="overflow-x-auto gap-8 flex">
+                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
                                     class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
-                                    1
-                                </div>
+                                    1</div>
                                 <div class="text-white font-inter text-xl lg:text-3xl font-medium">Unlimited Shipping
                                     Stations</div>
                                 <div class="text-white font-inter font-normal text-sm lg:text-base">Scale your shipping
@@ -471,11 +471,10 @@
                                 </div>
                             </div>
 
-                            <div class="flex-shrink-0 max-w-80 flex gap-4 lg:gap-8 w-full flex-col">
+                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
                                     class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
-                                    2
-                                </div>
+                                    2</div>
                                 <div class="text-white font-inter text-xl lg:text-3xl font-medium">Comprehensive
                                     Shipment Overview</div>
                                 <div class="text-white font-inter font-normal text-sm lg:text-base">Get a complete view
@@ -484,11 +483,10 @@
                                     to ensure accurate and timely dispatch.</div>
                             </div>
 
-                            <div class="flex-shrink-0 max-w-80 flex gap-4 lg:gap-8 w-full flex-col">
+                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
                                     class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
-                                    3
-                                </div>
+                                    3</div>
                                 <div class="text-white font-inter text-xl lg:text-3xl font-medium">Multi-Courier
                                     Integration</div>
                                 <div class="text-white font-inter font-normal text-sm lg:text-base">Seamlessly integrate
@@ -497,11 +495,10 @@
                                     tracking details back to Acumatica.</div>
                             </div>
 
-                            <div class="flex-shrink-0 max-w-80 flex gap-4 lg:gap-8 w-full flex-col">
+                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
                                     class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
-                                    4
-                                </div>
+                                    4</div>
                                 <div class="text-white font-inter text-xl lg:text-3xl font-medium">Real-Time Tracking
                                     Information</div>
                                 <div class="text-white font-inter font-normal text-sm lg:text-base">Stay informed and
@@ -510,31 +507,31 @@
                                     updates and enhance customer satisfaction.</div>
                             </div>
 
-                            <div class="flex-shrink-0 max-w-80 flex gap-4 lg:gap-8 w-full flex-col">
+                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
                                     class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
-                                    5
-                                </div>
+                                    5</div>
                                 <div class="text-white font-inter text-xl lg:text-3xl font-medium">Accurate
                                     Record-Keeping</div>
                                 <div class="text-white font-inter font-normal text-sm lg:text-base">Every shipping
                                     activity is tracked and logged. Maintain detailed records for audit purposes,
-                                    analyse shipping performance, and improve workflow efficiency through data-driven
+                                    analyze shipping performance, and improve workflow efficiency through data-driven
                                     insights.</div>
                             </div>
-
-                            <!-- Add more sections as needed -->
                         </div>
 
-                        <div class="flex gap-8">
-                            <div class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center">
+                        <div class="flex gap-8 mt-4">
+                            <div id="modalScroll3left"
+                                class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center cursor-pointer">
                                 <img src="../src/img/arrow-left.png" alt="Panah Kiri" class="w-8 h-8">
                             </div>
-                            <div class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center">
+                            <div id="modalScroll3right"
+                                class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center cursor-pointer">
                                 <img src="../src/img/arrow-right.png" alt="Panah Kanan" class="w-8 h-8">
                             </div>
                         </div>
                     </div>
+
 
                     <div class="w-full rounded-b-2xl flex bg-[#CFFCE3] p-10">
                         <div class="flex flex-col">
@@ -558,114 +555,148 @@
 
     </div>
 
-    <div class="relative w-full mx-auto bg-[#003E2C]">
-        <img src="../src/img/Image.png" alt="Gambar" class="w-full h-full object-cover">
-        <div class="absolute top-0 left-0 flex flex-col gap-32 w-full h-full px-32 py-28">
-            <div class="flex  justify-between">
-                <div class="flex items-center justify-center">
-                    <div class="max-w-4xl  gap-8 flex flex-col w-full ">
-                        <div class="text-white font-semibold font-inter text-2xl">Why Choose Our Custom SSCC Labels?
-                        </div>
-                        <div class="text-white font-inter font-medium text-6xl ">Customisable SSCC Labels to Fit Your
-                            Business
-                            Needs</div>
-                        <div class="font-normal text-white text-2xl">Every business is unique, and so are your labelling
-                            needs. At PickPackShip
-                            Solutions, we
-                            provide customized SSCC label generation to streamline your shipping process, ensure
-                            compliance and make your brand shine.</div>
+
+    <div id="customSscLabels" class="w-full  bg-[#003E2C] flex flex-col items-center  gap-8">
+        <div class="w-full bg-cover bg-center" style="background-image: url('../src/img/Image.png');">
+            <div class="flex flex-col lg:gap-32 pb-12 gap-12">
+                <div class="flex flex-col lg:mx-32 mx-4 gap-10 mt-5 lg:mt-32 xl:flex-row justify-between">
+                    <!-- Gambar untuk tampilan mobile dan desktop -->
+                    <div class="flex justify-center items-center  xl:mb-0 xl:order-2">
+                        <img src="../src/img/wrapper.png" alt="" class="w-full max-w-md">
                     </div>
 
-                </div>
-                <div><img src="../src/img/wrapper.png" alt=""></div>
-            </div>
-            <div class=" border-[#CFFCE3] border w-full"></div>
-            <div class="flex  gap-20 flex-col">
-                <div class="  overflow-x-auto gap-8 flex">
-                    <div class="flex-shrink-0 max-w-md flex gap-8 w-full flex-col">
-                        <div
-                            class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
-                            1</div>
-                        <div class="text-white font-inter text-4xl font-medium">Personalised for Your Operations</div>
-                        <div class="text-white font-inter font-normal text-lg">No matter how complex your shipping
-                            process, our software adapts to fit. You can customise every aspect of your SSCC labels—from
-                            layout and design to specific data elements—making it easy to align with your operational
-                            workflow, customer requirements, or industry standards.</div>
-                    </div>
-                    <div class="flex-shrink-0 max-w-md flex gap-8 w-full flex-col">
-                        <div
-                            class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
-                            2</div>
-                        <div class="text-white font-inter text-4xl font-medium">Seamless Integration with Your Branding
-                        </div>
-                        <div class="text-white font-inter font-normal text-lg">Make your labels work for your brand. Add
-                            your logo or any other brand identifiers to your SSCC labels, enhancing your professional
-                            image and ensuring your shipments look
-                            polished from the warehouse to the customer’s door.</div>
-                    </div>
-                    <div class="flex-shrink-0 max-w-md flex gap-8 w-full flex-col">
-                        <div
-                            class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
-                            3</div>
-                        <div class="text-white font-inter text-4xl font-medium">Enhanced Data Accuracy & Compliance
-                        </div>
-                        <div class="text-white font-inter font-normal text-lg">Our labels are GS1-128 compliant,
-                            ensuring you meet global standards for SSCC labelling.
-                            Beyond compliance, you have the power to decide what information is included on the
-                            label, improving data accuracy and reducing errors in scanning, tracking, and receiving.
+                    <div class="flex items-center justify-center">
+                        <div class="max-w-4xl gap-8 flex flex-col w-full">
+                            <div class="text-white font-semibold font-inter text-base md:text-lg lg:text-2xl">
+                                Why Choose Our Custom SSCC Labels?
+                            </div>
+                            <div class="text-white font-inter font-medium text-2xl md:text-3xl lg:text-6xl">
+                                Customisable SSCC Labels to Fit Your Business Needs
+                            </div>
+                            <div class="font-normal text-white text-base md:text-lg lg:text-2xl">
+                                Every business is unique, and so are your labelling needs. At PickPackShip Solutions, we
+                                provide customized SSCC label generation to streamline your shipping process, ensure
+                                compliance, and make your brand shine.
+                            </div>
                         </div>
                     </div>
-                    <div class="flex-shrink-0 max-w-md flex gap-8 w-full flex-col">
-                        <div
-                            class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
-                            4</div>
-                        <div class="text-white font-inter text-4xl font-medium">Effortless Automation & Flexibility
-                        </div>
-                        <div class="text-white font-inter font-normal text-lg">Generate labels automatically based on
-                            your specific packing and shipping requirements.
-                            We can easily adjust details like label size, barcodes, and information fields, adapting to
-                            different customers, products, or shipment types without any hassle.</div>
-                    </div>
-                    <div class="flex-shrink-0 max-w-md flex gap-8 w-full flex-col">
-                        <div
-                            class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
-                            5</div>
-                        <div class="text-white font-inter text-4xl font-medium">Real-Time Sync with Acumatica</div>
-                        <div class="text-white font-inter font-normal text-lg">Labels are more than just stickers—they
-                            carry critical shipment data. Our SSCC label
-                            generation is integrated with your Acumatica system, meaning every label is created and
-                            updated in real time, keeping your inventory and shipment information fully aligned.</div>
-                    </div>
-
                 </div>
 
 
-                <div class="flex gap-8">
-                    <div class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center">
-                        <img src="../src/img/arrow-left.png" alt="Panah Kiri" class="w-8 h-8">
+                <div class=" border-[#CFFCE3]   border mx-4 lg:mx-32"></div>
+
+                <div class="flex lg:mx-32 mb-5 mx-4 lg:mb-32 gap-14 lg:gap-20 flex-col">
+                    <div id="sectionScroll1" class="overflow-x-auto gap-8 flex">
+                        <div class="flex-shrink-0 lg:max-w-md flex w-52 gap-8 lg:w-full flex-col">
+                            <div
+                                class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                1</div>
+                            <div class="flex flex-col gap-4">
+                                <div class="text-white font-inter text-4xl font-medium">Personalised for Your Operations
+                                </div>
+                                <div class="text-white font-inter font-normal text-lg">No matter how complex your
+                                    shipping process, our software adapts to fit. You can customise every aspect of your
+                                    SSCC labels—from layout and design to specific data elements—making it easy to align
+                                    with your operational workflow, customer requirements, or industry standards.</div>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 lg:max-w-md flex w-52 gap-8 lg:w-full flex-col">
+                            <div
+                                class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                2</div>
+                            <div class="flex flex-col gap-4">
+                                <div class="text-white font-inter text-4xl font-medium">Seamless Integration with Your
+                                    Branding</div>
+                                <div class="text-white font-inter font-normal text-lg">Make your labels work for your
+                                    brand. Add your logo or any other brand identifiers to your SSCC labels, enhancing
+                                    your professional image and ensuring your shipments look polished from the warehouse
+                                    to the customer’s door.</div>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 lg:max-w-md flex w-52 gap-8 lg:w-full flex-col">
+                            <div
+                                class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                3</div>
+                            <div class="flex flex-col gap-4">
+                                <div class="text-white font-inter text-4xl font-medium">Enhanced Data Accuracy &
+                                    Compliance</div>
+                                <div class="text-white font-inter font-normal text-lg">Our labels are GS1-128 compliant,
+                                    ensuring you meet global standards for SSCC labelling. Beyond compliance, you have
+                                    the power to decide what information is included on the label, improving data
+                                    accuracy and reducing errors in scanning, tracking, and receiving.</div>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 lg:max-w-md flex w-52 gap-8 lg:w-full flex-col">
+                            <div
+                                class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                4</div>
+                            <div class="flex flex-col gap-4">
+                                <div class="text-white font-inter text-4xl font-medium">Effortless Automation &
+                                    Flexibility</div>
+                                <div class="text-white font-inter font-normal text-lg">Generate labels automatically
+                                    based on your specific packing and shipping requirements. We can easily adjust
+                                    details like label size, barcodes, and information fields, adapting to different
+                                    customers, products, or shipment types without any hassle.</div>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 lg:max-w-md flex w-52 gap-8 lg:w-full flex-col">
+                            <div
+                                class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
+                                5</div>
+                            <div class="flex flex-col gap-4">
+                                <div class="text-white font-inter text-4xl font-medium">Real-Time Sync with Acumatica
+                                </div>
+                                <div class="text-white font-inter font-normal text-lg">Labels are more than just
+                                    stickers—they carry critical shipment data. Our SSCC label generation is integrated
+                                    with your Acumatica system, meaning every label is created and updated in real time,
+                                    keeping your inventory and shipment information fully aligned.</div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center">
-                        <img src="../src/img/arrow-right.png" alt="Panah Kanan" class="w-8 h-8">
+                    <div class="flex gap-8">
+                        <div id="sectionScroll1Left"
+                            class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center cursor-pointer">
+                            <img src="../src/img/arrow-left.png" alt="Panah Kiri" class="w-8 h-8">
+                        </div>
+
+                        <div id="sectionScroll1Right"
+                            class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center cursor-pointer">
+                            <img src="../src/img/arrow-right.png" alt="Panah Kanan" class="w-8 h-8">
+                        </div>
                     </div>
                 </div>
+
+
+
 
             </div>
         </div>
     </div>
 
 
-    <div class="w-full flex flex-col gap-40 pt-40 pb-32 px-4 lg:px-36">
+
+
+    <div class="w-full flex flex-col gap-8 lg:gap-40 pt-10 lg:pt-40 pb-10 lg:pb-32 px-4 lg:px-36">
+        <!-- Section 1 -->
         <div class="flex flex-col lg:flex-row justify-between">
-            <div class="flex items-center justify-center w-full lg:w-auto">
+            <!-- Gambar -->
+
+            <div class="flex justify-center items-center mb-8 xl:mb-0 xl:order-2">
+                <img src="../src/img/wrapper (1).png" alt="" class="w-full max-w-md">
+            </div>
+            <!-- Konten Text -->
+            <div class="flex items-center justify-center w-full lg:w-auto order-2 lg:order-1">
                 <div class="max-w-4xl gap-8 flex flex-col w-full">
                     <div class="text-black font-semibold font-inter text-2xl">Your Supply Chain, Elevated</div>
                     <div class="text-black font-inter font-medium text-4xl lg:text-6xl">PickPackShip Solutions:
-                        Cloud-Powered & Acumatica-Centric</div>
+                        Cloud-Powered & Acumatica-Centric
+                    </div>
                     <div class="font-normal text-black text-lg lg:text-2xl">PickPackShip is not a standalone product but
                         a sophisticated extension of MYOB Acumatica ERP and Acumatica ERP. With online access, real-time
                         updates, and AWS-backed reliability, our solution enhances every aspect of your pick, pack, and
-                        ship process—giving your business the efficiency and accuracy it deserves.</div>
+                        ship process—giving your business the efficiency and accuracy it deserves.
+                    </div>
                     <div class="relative flex gap-6">
                         <button
                             class="bg-green-800 font-inter font-medium text-lg lg:text-xl py-4 px-6 rounded-xl text-white">
@@ -674,17 +705,17 @@
                     </div>
                 </div>
             </div>
-            <div class="flex">
-                <img src="../src/img/wrapper (1).png" alt="">
-            </div>
         </div>
 
-        <div class="px-4 lg:px-16 py-20 bg-[#FAFAFA] flex flex-col lg:flex-row justify-between">
+        <!-- Section 2: Contact Form -->
+        <div id="contactUs"
+            class="px-4 lg:px-16 py-20 bg-[#FAFAFA] rounded-xl flex flex-col lg:flex-row justify-between">
             <div class="flex gap-6 max-w-2xl flex-col mb-8 lg:mb-0">
                 <div class="font-semibold font-inter text-2xl text-[#003E2C]">Contact Us</div>
                 <div class="font-inter text-4xl lg:text-6xl font-medium">Book a demo</div>
                 <div class="font-inter font-normal text-lg lg:text-2xl">Reach out to our sales team to discover
-                    innovative solutions tailored to your business needs. We’ll be in touch shortly.</div>
+                    innovative solutions tailored to your business needs. We’ll be in touch shortly.
+                </div>
             </div>
             <div class="flex gap-9 max-w-2xl flex-col p-6">
                 <!-- Form Wrapper -->
@@ -734,44 +765,52 @@
     </div>
 
 
-    <footer class="px-4 pt-10 pb-5 bg-[#FAFAFA] text-black font-inter">
-        <div class="flex flex-col lg:flex-row justify-between h-full">
-            <div class="flex gap-10 flex-col mb-8 lg:mb-0">
+    <footer class="px-4 pt-10 pb-5 md:px-36 bg-[#FAFAFA] text-black font-inter">
+        <div class="flex gap-10 flex-col lg:flex-row justify-between h-full">
+            <!-- Logo dan Alamat -->
+            <div class="flex gap-10 flex-col lg:mb-0 order-1 lg:order-1">
                 <div class="flex flex-col gap-6">
                     <div class="flex min-w-40 items-center justify-start">
                         <img src="../src/img/logo.png" alt="Logo" class="h-12 w-auto">
-                        <div class="flex flex-col items-start text-black text-xl leading-7 font-medium ml-4">
+                        <div
+                            class="flex flex-col items-start text-black text-xl md:text-2xl leading-7 font-medium ml-4">
                             <span>PickPackShip</span>
                             <span>Solution</span>
                         </div>
                     </div>
                     <div class="text-left">
-                        <span class="text-lg block">14 Manton Street</span>
-                        <span class="text-lg block">Morningside QLD 4170</span>
-                        <span class="text-lg block">Australia</span>
+                        <span class="lg:text-xl md:text-lg text-sm block">14 Manton Street</span>
+                        <span class="lg:text-xl md:text-lg text-sm block">Morningside QLD 4170</span>
+                        <span class="lg:text-xl md:text-lg text-sm block">Australia</span>
                     </div>
                 </div>
             </div>
 
-            <div class="flex gap-8 flex-col mb-8 lg:mb-0">
-                <div class="text-lg font-normal text-[#404040]">General Inquiries</div>
+            <!-- General Inquiries (di tengah pada desktop, di atas copyright pada mobile) -->
+            <div class="flex lg:gap-8 gap-3 flex-col lg:mb-0 order-3 lg:order-2 lg:self-center">
+                <div class="text-sm md:text-base lg:text-lg font-medium text-[#404040]">General Inquiries</div>
                 <div>
-                    <div class="text-lg font-normal font-inter">Email: <a href="mailto:sales@herronbooks.com"
-                            class="hover:underline">sales@herronbooks.com</a></div>
-                    <div class="text-lg font-normal font-inter">Phone: <a href="tel:+61733998799"
+                    <div class="lg:text-xl md:text-lg text-sm font-normal font-inter">Email: <a
+                            href="mailto:sales@herronbooks.com" class="hover:underline">sales@herronbooks.com</a></div>
+                    <div class="lg:text-xl md:text-lg text-sm font-normal font-inter">Phone: <a href="tel:+61733998799"
                             class="hover:underline">+61 7 3399 8799</a></div>
-                    <div class="text-lg font-normal font-inter">Fax: <a href="tel:+61733993255"
+                    <div class="lg:text-xl md:text-lg text-sm font-normal font-inter">Fax: <a href="tel:+61733993255"
                             class="hover:underline">+61 7 3399 3255</a></div>
                 </div>
             </div>
 
-            <div class="flex items-start flex-col">
-                <a href="#" class="text-lg font-normal font-inter">Home</a>
-                <a href="#" class="text-lg font-normal font-inter">Custom SSC Labels</a>
-                <a href="#" class="text-lg font-normal font-inter">Contact Us</a>
+            <!-- Menu Links -->
+            <div class="flex lg:items-end flex-col order-2 lg:order-3">
+                <a href="" class="lg:text-xl md:text-lg text-sm font-normal font-inter">Home</a>
+                <a href="#customSscLabels" class="lg:text-xl md:text-lg text-sm font-normal font-inter">Custom SSC
+                    Labels</a>
+                <a href="#contactUs" class="lg:text-xl md:text-lg text-sm font-normal font-inter">Contact Us</a>
             </div>
         </div>
-        <div class="mt-4 text-left text-lg font-normal">
+
+        <!-- Copyright Section -->
+        <div
+            class="mt-4 text-left text-[#616161] lg:pt-20 text-sm md:text-base lg:text-xl font-normal order-4 lg:order-4">
             ⓒ 2024 PickPackShip Solution
         </div>
     </footer>
@@ -780,8 +819,105 @@
 
 
 
-
     <script>
+
+
+        const modalScrollContainer = document.getElementById('modalScroll1');
+        const scrollLeftButton = document.getElementById('modalScroll1left');
+        const scrollRightButton = document.getElementById('modalScroll1right');
+
+
+        scrollLeftButton.addEventListener('click', () => {
+            modalScrollContainer.scrollBy({
+                top: 0,
+                left: -300,
+                behavior: 'smooth'
+            });
+        });
+
+        // Scroll ke Kanan
+        scrollRightButton.addEventListener('click', () => {
+            modalScrollContainer.scrollBy({
+                top: 0,
+                left: 300,
+                behavior: 'smooth'
+            });
+        });
+
+
+
+
+        const modalScroll2Container = document.getElementById('modalScroll2');
+        const scrollLeftButton2 = document.getElementById('modalScroll2left');
+        const scrollRightButton2 = document.getElementById('modalScroll2right');
+
+
+        scrollLeftButton2.addEventListener('click', () => {
+            modalScroll2Container.scrollBy({
+                top: 0,
+                left: -300,
+                behavior: 'smooth'
+            });
+        });
+
+        scrollRightButton2.addEventListener('click', () => {
+            modalScroll2Container.scrollBy({
+                top: 0,
+                left: 300,
+                behavior: 'smooth'
+            });
+        });
+
+
+
+
+        const modalScroll3Container = document.getElementById('modalScroll3');
+        const scrollLeftButton3 = document.getElementById('modalScroll3left');
+        const scrollRightButton3 = document.getElementById('modalScroll3right');
+
+
+        scrollLeftButton3.addEventListener('click', () => {
+            modalScroll3Container.scrollBy({
+                top: 0,
+                left: -300,
+                behavior: 'smooth'
+            });
+        });
+
+
+        scrollRightButton3.addEventListener('click', () => {
+            modalScroll3Container.scrollBy({
+                top: 0,
+                left: 300,
+                behavior: 'smooth'
+            });
+        });
+
+
+
+
+        const sectionScroll1Container = document.getElementById('sectionScroll1');
+        const scrollLeftButton1 = document.getElementById('sectionScroll1Left');
+        const scrollRightButton1 = document.getElementById('sectionScroll1Right');
+
+
+        scrollLeftButton1.addEventListener('click', () => {
+            sectionScroll1Container.scrollBy({
+                top: 0,
+                left: -300,
+                behavior: 'smooth'
+            });
+        });
+
+        // Scroll ke Kanan untuk Konten
+        scrollRightButton1.addEventListener('click', () => {
+            sectionScroll1Container.scrollBy({
+                top: 0,
+                left: 300,
+                behavior: 'smooth'
+            });
+        });
+
         document.addEventListener("DOMContentLoaded", () => {
             const container = document.querySelector(".overflow-x-auto");
             const leftArrow = document.querySelector('img[alt="Panah Kiri"]').parentElement;
@@ -815,12 +951,8 @@
                 button.closest('.fixed').classList.add('hidden');
             });
         });
-    </script>
 
 
-
-
-    <script>
         document.getElementById('hamburger-menu').addEventListener('click', function () {
             var wrapper = document.getElementById('wrapper');
             var hamburgerIcon = document.getElementById('hamburger-icon');
@@ -838,10 +970,7 @@
                 closeIcon.classList.add('hidden');
             }
         });
-    </script>
 
-
-    <script>
         const images = [
             '../src/img/hero1.png',
             '../src/img/hero2.png',
@@ -865,18 +994,36 @@
         }
 
         setInterval(changeBackgroundImage, 10000); // Ganti gambar setiap 5 detik
+
+
+        const mainNav = document.getElementById('mainNav');
+        const links = document.querySelectorAll('#mainNav a');
+
+
+        function handleScroll() {
+            if (window.innerWidth >= 1024) {
+                if (window.scrollY > 50) {
+                    mainNav.classList.remove('lg:bg-transparent', 'lg:text-white');
+                    mainNav.classList.add('lg:bg-white', 'lg:text-black', 'border-b-gray-200');
+                    links.forEach(link => link.classList.add('lg:text-black'));
+                } else {
+                    mainNav.classList.remove('lg:bg-white', 'lg:text-black', 'border-b-gray-200');
+                    mainNav.classList.add('lg:bg-transparent', 'lg:text-white');
+                    links.forEach(link => link.classList.remove('lg:text-black'));
+                }
+            } else {
+                mainNav.classList.add('bg-white', 'text-black');
+                mainNav.classList.remove('lg:bg-transparent', 'lg:text-white');
+            }
+        }
+
+
+        handleScroll();
+
+        window.addEventListener('scroll', handleScroll);
+
+        window.addEventListener('resize', handleScroll);
     </script>
-
-    <style>
-        #hero-image {
-            transition: opacity 0.5s ease-in-out;
-        }
-
-        .opacity-0 {
-            opacity: 0;
-        }
-    </style>
-
 
 
 </body>
