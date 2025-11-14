@@ -70,27 +70,27 @@
 
 
     <!-- Start Hero Section -->
-    <div class="relative w-full h-screen mx-auto overflow-hidden">
+    <div class="relative w-full h-screen min-h-[600px] mx-auto overflow-hidden">
         <img id="hero-image" src="./img/hero1.png" alt="Gambar"
             class="w-full h-full object-cover transition-opacity duration-1000">
 
         <!-- Konten di atas gambar -->
         <div
-            class="absolute left-4 right-4 lg:left-36 lg:right-36 lg:max-w-6xl lg:w-full gap-14 flex flex-col bottom-40 px-4">
+            class="hero-content absolute left-4 right-4 lg:left-36 lg:right-36 lg:max-w-6xl lg:w-full gap-8 lg:gap-14 flex flex-col bottom-20 sm:bottom-32 lg:bottom-40 px-4">
             <div class="lg:gap-7 gap-4 flex flex-col">
-                <div class="font-inter font-semibold text-white text-base leading-8 lg:text-2xl">Streamline Your Supply
+                <div class="font-inter font-semibold text-white text-sm sm:text-base leading-6 sm:leading-8 lg:text-2xl">Streamline Your Supply
                     Chain</div>
-                <div class="font-medium text-white font-inter text-5xl lg:text-7xl">Revolutionises Your Pick, Pack, and
+                <div class="font-medium text-white font-inter text-3xl sm:text-4xl md:text-5xl lg:text-7xl leading-tight">Revolutionises Your Pick, Pack, and
                     Ship Process</div>
-                <div class="text-white text-inter font-normal text-base lg:text-2xl leading-8">Seamlessly Integrate with
+                <div class="text-white text-inter font-normal text-sm sm:text-base lg:text-2xl leading-6 sm:leading-8">Seamlessly Integrate with
                     Acumatica and MYOB ERP for a Faster, Error-Free Supply Chain.</div>
             </div>
 
-            <div class="relative flex flex-col lg:flex-row gap-6">
-                <button class="bg-green-800 font-inter font-medium text-xl py-4 px-6 rounded-xl text-white">
+            <div class="relative flex flex-col sm:flex-row gap-4 lg:gap-6">
+                <button class="bg-green-800 font-inter font-medium text-base sm:text-lg lg:text-xl py-3 sm:py-4 px-6 rounded-xl text-white hover:bg-green-900 transition-colors w-full sm:w-auto">
                     Get Started Today
                 </button>
-                <button class="bg-transparent border font-inter font-medium text-xl py-4 px-6 rounded-xl text-white">
+                <button class="bg-transparent border border-white font-inter font-medium text-base sm:text-lg lg:text-xl py-3 sm:py-4 px-6 rounded-xl text-white hover:bg-white hover:text-green-900 transition-colors w-full sm:w-auto">
                     See More
                 </button>
             </div>
@@ -100,12 +100,12 @@
 
 
 
-    <div id="whyUs" class="lg:pb-36 lg:pt-32 lg:px-36 px-4 py-20 flex flex-col gap-28">
-        <div class=" mx-auto max-w-5xl text-center w-full flex flex-col gap-7">
-            <div class="font-inter font-semibold text-base lg:text-xl text-green-900">Why PickPackShip Solutions?</div>
-            <div class="font-inter font-medium text-3xl lg:text-6xl">Efficiency, Accuracy, and Seamless Integration
+    <div id="whyUs" class="lg:pb-36 lg:pt-32 lg:px-36 px-4 py-12 sm:py-16 lg:py-20 flex flex-col gap-16 sm:gap-20 lg:gap-28">
+        <div class="mx-auto max-w-5xl text-center w-full flex flex-col gap-4 sm:gap-5 lg:gap-7">
+            <div class="font-inter font-semibold text-sm sm:text-base lg:text-xl text-green-900">Why PickPackShip Solutions?</div>
+            <div class="font-inter font-medium text-2xl sm:text-3xl md:text-4xl lg:text-6xl leading-tight">Efficiency, Accuracy, and Seamless Integration
             </div>
-            <div class="font-inter font-normal text-base lg:text-2xl">At PickPackShip Solutions, we simplify your supply
+            <div class="font-inter font-normal text-sm sm:text-base lg:text-2xl leading-relaxed">At PickPackShip Solutions, we simplify your supply
                 chain with
                 innovative technology that
                 seamlessly
@@ -139,101 +139,101 @@
                 </div>
             </div>
 
-            <div id="modal1" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
-                <div class="max-w-5xl w-full mx-auto bg-white rounded-2xl shadow-lg">
-                    <div class="w-full lg:rounded-t-2xl flex bg-[#003E2C] p-10">
-                        <div class="flex flex-col">
+            <div id="modal1" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden p-4">
+                <div class="modal-container max-w-5xl w-full mx-auto bg-white rounded-xl lg:rounded-2xl shadow-lg max-h-[90vh] overflow-y-auto">
+                    <div class="modal-header w-full lg:rounded-t-2xl flex flex-col sm:flex-row bg-[#003E2C] p-4 sm:p-6 lg:p-10 gap-4">
+                        <div class="flex flex-col flex-1">
                             <div class="flex items-center mb-2">
-                                <div class="text-white font-inter font-medium text-xl">
-                                    <img src="./img/box-tick1.png" alt="" class="w-14 lg:w-20">
+                                <div class="text-white font-inter font-medium text-base sm:text-lg lg:text-xl">
+                                    <img src="./img/box-tick1.png" alt="" class="w-10 sm:w-12 lg:w-20">
                                 </div>
-                                <div class="ml-4 text-white font-inter font-medium text-xl">Efficient Picking</div>
+                                <div class="ml-3 sm:ml-4 text-white font-inter font-medium text-base sm:text-lg lg:text-xl">Efficient Picking</div>
                             </div>
-                            <div class="text-white font-inter">Our powerful packing module is designed to enhance the
+                            <div class="text-white font-inter text-sm sm:text-base">Our powerful packing module is designed to enhance the
                                 efficiency and accuracy of your packing process. Discover how it can make a difference:
                             </div>
                         </div>
                         <button
-                            class="flex items-center justify-center mx-auto border border-white rounded-lg bg-transparent hover:text-black focus:outline-none w-11 h-11 lg:w-28 lg:h-12 aspect-square gap-1 closeModalButton">
+                            class="flex items-center justify-center border border-white rounded-lg bg-transparent hover:bg-white hover:text-black focus:outline-none w-full sm:w-auto h-11 lg:h-12 px-4 gap-2 closeModalButton transition-colors">
                             <span class="text-lg font-bold flex items-center justify-center">
                                 <img src="./img/close-circle.png" class="w-5 h-5" alt="Close Icon">
                             </span>
-                            <span class="hidden lg:flex text-white">Close</span>
+                            <span class="text-white text-sm sm:text-base">Close</span>
                         </button>
 
                     </div>
 
-                    <div class="flex bg-[#035139] pl-10 pt-16 relative py-10 pb-10 gap-10 lg:gap-20 flex-col">
+                    <div class="modal-content flex bg-[#035139] px-4 sm:px-6 lg:pl-10 pt-8 sm:pt-12 lg:pt-16 relative py-6 sm:py-8 lg:py-10 pb-6 sm:pb-8 lg:pb-10 gap-6 sm:gap-8 lg:gap-20 flex-col">
                         <!-- Konten Scrollable -->
-                        <div id="modalScroll1" class="overflow-x-auto gap-8 flex">
-                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
+                        <div id="modalScroll1" class="overflow-x-auto gap-4 sm:gap-6 lg:gap-8 flex">
+                            <div class="flex-shrink-0 w-64 sm:w-72 lg:max-w-80 flex gap-3 sm:gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
-                                    class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
+                                    class="rounded-full font-inter font-medium text-sm sm:text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12">
                                     1</div>
-                                <div class="text-white font-inter text-xl lg:text-3xl font-medium">Personalised for Your
+                                <div class="text-white font-inter text-lg sm:text-xl lg:text-3xl font-medium">Personalised for Your
                                     Operations</div>
-                                <div class="text-white font-inter font-normal text-sm lg:text-base">No matter how
+                                <div class="text-white font-inter font-normal text-xs sm:text-sm lg:text-base">No matter how
                                     complex your shipping process, our software adapts to fit. You can customise every
                                     aspect of your SSCC labels—from layout and design to specific data elements—making
                                     it easy to align with your operational workflow, customer requirements, or industry
                                     standards.</div>
                             </div>
 
-                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
+                            <div class="flex-shrink-0 w-64 sm:w-72 lg:max-w-80 flex gap-3 sm:gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
-                                    class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
+                                    class="rounded-full font-inter font-medium text-sm sm:text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12">
                                     2</div>
-                                <div class="text-white font-inter text-xl lg:text-3xl font-medium">Flexible Picking
+                                <div class="text-white font-inter text-lg sm:text-xl lg:text-3xl font-medium">Flexible Picking
                                     Modes</div>
-                                <div class="text-white font-inter font-normal text-sm lg:text-base">Customise your
+                                <div class="text-white font-inter font-normal text-xs sm:text-sm lg:text-base">Customise your
                                     picking process to suit your needs. Choose between single-order picking for a
                                     straightforward approach or multi-pick for handling multiple orders simultaneously,
                                     all tailored to fit your workflow.</div>
                             </div>
 
-                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
+                            <div class="flex-shrink-0 w-64 sm:w-72 lg:max-w-80 flex gap-3 sm:gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
-                                    class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
+                                    class="rounded-full font-inter font-medium text-sm sm:text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12">
                                     3</div>
-                                <div class="text-white font-inter text-xl lg:text-3xl font-medium">Real-Time Activity
+                                <div class="text-white font-inter text-lg sm:text-xl lg:text-3xl font-medium">Real-Time Activity
                                     Tracking</div>
-                                <div class="text-white font-inter font-normal text-sm lg:text-base">Monitor every step
+                                <div class="text-white font-inter font-normal text-xs sm:text-sm lg:text-base">Monitor every step
                                     of your picking process. With comprehensive activity logs, you can track picker
                                     performance, identify bottlenecks, and ensure orders are accurately fulfilled.</div>
                             </div>
 
-                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
+                            <div class="flex-shrink-0 w-64 sm:w-72 lg:max-w-80 flex gap-3 sm:gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
-                                    class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
+                                    class="rounded-full font-inter font-medium text-sm sm:text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12">
                                     4</div>
-                                <div class="text-white font-inter text-xl lg:text-3xl font-medium">Barcode Integration
+                                <div class="text-white font-inter text-lg sm:text-xl lg:text-3xl font-medium">Barcode Integration
                                 </div>
-                                <div class="text-white font-inter font-normal text-sm lg:text-base">Designed to work
+                                <div class="text-white font-inter font-normal text-xs sm:text-sm lg:text-base">Designed to work
                                     seamlessly with barcode scanners, our system ensures accurate data capture, speeding
                                     up your picking process while minimising the potential for human error.</div>
                             </div>
 
-                            <div class="flex-shrink-0 w-52 lg:max-w-80 flex gap-4 lg:gap-8 lg:w-full flex-col">
+                            <div class="flex-shrink-0 w-64 sm:w-72 lg:max-w-80 flex gap-3 sm:gap-4 lg:gap-8 lg:w-full flex-col">
                                 <div
-                                    class="rounded-full font-inter font-medium text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 lg:w-12 lg:h-12">
+                                    class="rounded-full font-inter font-medium text-sm sm:text-base lg:text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12">
                                     5</div>
-                                <div class="text-white font-inter text-xl lg:text-3xl font-medium">Enhanced Resource
+                                <div class="text-white font-inter text-lg sm:text-xl lg:text-3xl font-medium">Enhanced Resource
                                     Management</div>
-                                <div class="text-white font-inter font-normal text-sm lg:text-base">Gain full visibility
+                                <div class="text-white font-inter font-normal text-xs sm:text-sm lg:text-base">Gain full visibility
                                     into your picking operations. With detailed reporting, you can optimise resource
                                     allocation, identify efficiencies, and improve overall productivity.</div>
                             </div>
                         </div>
 
                         <!-- Tombol Panah -->
-                        <div class="flex gap-8">
+                        <div class="flex gap-4 sm:gap-6 lg:gap-8">
                             <div id="modalScroll1left"
-                                class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center cursor-pointer">
-                                <img src="./img/arrow-left.png" alt="Panah Kiri" class="w-8 h-8">
+                                class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full border border-gray-200 flex items-center justify-center cursor-pointer hover:bg-white hover:border-white transition-colors">
+                                <img src="./img/arrow-left.png" alt="Panah Kiri" class="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8">
                             </div>
                             <div id="modalScroll1right"
-                                class="w-16 h-16 rounded-full border border-gray-200 flex items-center justify-center cursor-pointer">
-                                <img src="./img/arrow-right.png" alt="Panah Kanan" class="w-8 h-8">
+                                class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-full border border-gray-200 flex items-center justify-center cursor-pointer hover:bg-white hover:border-white transition-colors">
+                                <img src="./img/arrow-right.png" alt="Panah Kanan" class="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8">
                             </div>
                         </div>
                     </div>
@@ -241,15 +241,15 @@
 
 
 
-                    <div class="w-full lg:rounded-b-2xl flex bg-[#CFFCE3] p-10">
+                    <div class="w-full lg:rounded-b-2xl flex bg-[#CFFCE3] p-4 sm:p-6 lg:p-10">
                         <div class="flex flex-col">
                             <div class="flex items-center mb-2">
-                                <div class="text-[#026343] font-inter font-medium text-xl"><img
-                                        src="./img/info-circle.png" alt=""></div>
-                                <div class="ml-4 text-[#026343] font-inter font-medium text-xl">Why Pick with
+                                <div class="text-[#026343] font-inter font-medium text-base sm:text-lg lg:text-xl"><img
+                                        src="./img/info-circle.png" alt="" class="w-5 h-5 sm:w-6 sm:h-6"></div>
+                                <div class="ml-3 sm:ml-4 text-[#026343] font-inter font-medium text-base sm:text-lg lg:text-xl">Why Pick with
                                     PickPackShip?</div>
                             </div>
-                            <div class="text-[#026343] font-inter">Our picking module is built to adapt to your unique
+                            <div class="text-[#026343] font-inter text-sm sm:text-base">Our picking module is built to adapt to your unique
                                 needs, providing unparalleled flexibility and control. From small adjustments to
                                 full-scale operations, our solution helps you deliver on time, every time.</div>
                         </div>
@@ -286,8 +286,7 @@
 
 
             <!-- Modal for Seamless Packing -->
-            <div id="modalSeamlessPacking"
-                class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+            <div id="modalSeamlessPacking" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden p-4">
                 <div class="max-w-5xl w-full mx-auto bg-white rounded-2xl shadow-lg">
                     <div class="w-full rounded-t-2xl flex bg-[#003E2C] p-10">
                         <div class="flex flex-col">
@@ -432,8 +431,7 @@
 
 
             <!-- Modal for Smooth Shipping -->
-            <div id="modalSmoothShipping"
-                class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden">
+            <div id="modalSmoothShipping" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 hidden p-4">
                 <div class="max-w-5xl w-full mx-auto bg-white rounded-2xl shadow-lg">
                     <div class="w-full rounded-t-2xl flex bg-[#003E2C] p-10">
                         <div class="flex flex-col">
@@ -556,24 +554,24 @@
     </div>
 
 
-    <div id="customSscLabels" class="w-full  bg-[#003E2C] flex flex-col items-center  gap-8">
+    <div id="customSscLabels" class="w-full bg-[#003E2C] flex flex-col items-center gap-6 sm:gap-8">
         <div class="w-full bg-cover bg-center" style="background-image: url('./img/Image.png');">
-            <div class="flex flex-col lg:gap-32 pb-12 gap-12">
-                <div class="flex flex-col lg:mx-32 mx-4 gap-10 mt-5 lg:mt-32 xl:flex-row justify-between">
+            <div class="flex flex-col lg:gap-32 pb-8 sm:pb-10 lg:pb-12 gap-8 sm:gap-10 lg:gap-12">
+                <div class="flex flex-col lg:mx-32 mx-4 gap-6 sm:gap-8 lg:gap-10 mt-8 sm:mt-12 lg:mt-32 xl:flex-row justify-between items-center">
                     <!-- Gambar untuk tampilan mobile dan desktop -->
-                    <div class="flex justify-center items-center  xl:mb-0 xl:order-2">
-                        <img src="./img/wrapper.png" alt="" class="w-full max-w-md">
+                    <div class="flex justify-center items-center xl:mb-0 xl:order-2 w-full xl:w-auto">
+                        <img src="./img/wrapper.png" alt="" class="w-full max-w-xs sm:max-w-sm md:max-w-md">
                     </div>
 
-                    <div class="flex items-center justify-center">
-                        <div class="max-w-4xl gap-8 flex flex-col w-full">
-                            <div class="text-white font-semibold font-inter text-base md:text-lg lg:text-2xl">
+                    <div class="flex items-center justify-center w-full xl:w-auto">
+                        <div class="max-w-4xl gap-4 sm:gap-6 lg:gap-8 flex flex-col w-full">
+                            <div class="text-white font-semibold font-inter text-sm sm:text-base md:text-lg lg:text-2xl">
                                 Why Choose Our Custom SSCC Labels?
                             </div>
-                            <div class="text-white font-inter font-medium text-2xl md:text-3xl lg:text-6xl">
+                            <div class="text-white font-inter font-medium text-xl sm:text-2xl md:text-3xl lg:text-5xl xl:text-6xl leading-tight">
                                 Customisable SSCC Labels to Fit Your Business Needs
                             </div>
-                            <div class="font-normal text-white text-base md:text-lg lg:text-2xl">
+                            <div class="font-normal text-white text-sm sm:text-base md:text-lg lg:text-2xl leading-relaxed">
                                 Every business is unique, and so are your labelling needs. At PickPackShip Solutions, we
                                 provide customized SSCC label generation to streamline your shipping process, ensure
                                 compliance, and make your brand shine.
@@ -583,70 +581,65 @@
                 </div>
 
 
-                <div class=" border-[#CFFCE3]   border mx-4 lg:mx-32"></div>
+                <div class="border-[#CFFCE3] border mx-4 lg:mx-32"></div>
 
-                <div class="flex lg:mx-32 mb-5 mx-4 lg:mb-32 gap-14 lg:gap-20 flex-col">
-                    <div id="sectionScroll1" class="overflow-x-auto gap-8 flex">
-                        <div class="flex-shrink-0 lg:max-w-md flex w-52 gap-8 lg:w-full flex-col">
+                <div class="flex lg:mx-32 mb-8 sm:mb-12 lg:mb-32 mx-4 gap-8 sm:gap-10 lg:gap-20 flex-col">
+                    <div id="sectionScroll1" class="overflow-x-auto gap-4 sm:gap-6 lg:gap-8 flex">
+                        <div class="flex-shrink-0 lg:max-w-md flex w-64 sm:w-72 md:w-80 gap-4 sm:gap-6 lg:gap-8 lg:w-full flex-col">
                             <div
                                 class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
                                 1</div>
                             <div class="flex flex-col gap-4">
-                                <div class="text-white font-inter text-4xl font-medium">Personalised for Your Operations
-                                </div>
-                                <div class="text-white font-inter font-normal text-lg">No matter how complex your
+                                <div class="text-white font-inter text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-tight">Personalised for Your Operations
+                                </div><div class="text-white font-inter font-normal text-sm sm:text-base lg:text-lg">No matter how complex your
                                     shipping process, our software adapts to fit. You can customise every aspect of your
                                     SSCC labels—from layout and design to specific data elements—making it easy to align
                                     with your operational workflow, customer requirements, or industry standards.</div>
                             </div>
                         </div>
-                        <div class="flex-shrink-0 lg:max-w-md flex w-52 gap-8 lg:w-full flex-col">
+                        <div class="flex-shrink-0 lg:max-w-md flex w-64 sm:w-72 md:w-80 gap-4 sm:gap-6 lg:gap-8 lg:w-full flex-col">
                             <div
                                 class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
                                 2</div>
                             <div class="flex flex-col gap-4">
-                                <div class="text-white font-inter text-4xl font-medium">Seamless Integration with Your
-                                    Branding</div>
-                                <div class="text-white font-inter font-normal text-lg">Make your labels work for your
+                                <div class="text-white font-inter text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-tight">Seamless Integration with Your
+                                    Branding</div><div class="text-white font-inter font-normal text-sm sm:text-base lg:text-lg">Make your labels work for your
                                     brand. Add your logo or any other brand identifiers to your SSCC labels, enhancing
                                     your professional image and ensuring your shipments look polished from the warehouse
                                     to the customer’s door.</div>
                             </div>
                         </div>
-                        <div class="flex-shrink-0 lg:max-w-md flex w-52 gap-8 lg:w-full flex-col">
+                        <div class="flex-shrink-0 lg:max-w-md flex w-64 sm:w-72 md:w-80 gap-4 sm:gap-6 lg:gap-8 lg:w-full flex-col">
                             <div
                                 class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
                                 3</div>
                             <div class="flex flex-col gap-4">
-                                <div class="text-white font-inter text-4xl font-medium">Enhanced Data Accuracy &
-                                    Compliance</div>
-                                <div class="text-white font-inter font-normal text-lg">Our labels are GS1-128 compliant,
+                                <div class="text-white font-inter text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-tight">Enhanced Data Accuracy &
+                                    Compliance</div><div class="text-white font-inter font-normal text-sm sm:text-base lg:text-lg">Our labels are GS1-128 compliant,
                                     ensuring you meet global standards for SSCC labelling. Beyond compliance, you have
                                     the power to decide what information is included on the label, improving data
                                     accuracy and reducing errors in scanning, tracking, and receiving.</div>
                             </div>
                         </div>
-                        <div class="flex-shrink-0 lg:max-w-md flex w-52 gap-8 lg:w-full flex-col">
+                        <div class="flex-shrink-0 lg:max-w-md flex w-64 sm:w-72 md:w-80 gap-4 sm:gap-6 lg:gap-8 lg:w-full flex-col">
                             <div
                                 class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
                                 4</div>
                             <div class="flex flex-col gap-4">
-                                <div class="text-white font-inter text-4xl font-medium">Effortless Automation &
-                                    Flexibility</div>
-                                <div class="text-white font-inter font-normal text-lg">Generate labels automatically
+                                <div class="text-white font-inter text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-tight">Effortless Automation &
+                                    Flexibility</div><div class="text-white font-inter font-normal text-sm sm:text-base lg:text-lg">Generate labels automatically
                                     based on your specific packing and shipping requirements. We can easily adjust
                                     details like label size, barcodes, and information fields, adapting to different
                                     customers, products, or shipment types without any hassle.</div>
                             </div>
                         </div>
-                        <div class="flex-shrink-0 lg:max-w-md flex w-52 gap-8 lg:w-full flex-col">
+                        <div class="flex-shrink-0 lg:max-w-md flex w-64 sm:w-72 md:w-80 gap-4 sm:gap-6 lg:gap-8 lg:w-full flex-col">
                             <div
                                 class="rounded-full font-inter font-medium text-2xl bg-[#CFFCE3] text-[#026343] text-center flex items-center justify-center w-12 h-12">
                                 5</div>
                             <div class="flex flex-col gap-4">
-                                <div class="text-white font-inter text-4xl font-medium">Real-Time Sync with Acumatica
-                                </div>
-                                <div class="text-white font-inter font-normal text-lg">Labels are more than just
+                                <div class="text-white font-inter text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-tight">Real-Time Sync with Acumatica
+                                </div><div class="text-white font-inter font-normal text-sm sm:text-base lg:text-lg">Labels are more than just
                                     stickers—they carry critical shipment data. Our SSCC label generation is integrated
                                     with your Acumatica system, meaning every label is created and updated in real time,
                                     keeping your inventory and shipment information fully aligned.</div>
@@ -1025,7 +1018,7 @@
         window.addEventListener('resize', handleScroll);
     </script>
 
-
+    <script src="./responsive.js"></script>
 </body>
 
 </html>
